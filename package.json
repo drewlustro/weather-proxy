@@ -9,6 +9,7 @@
   },
   "author": "Drew Lustro",
   "license": "MIT",
+  "repository": "https://github.com/drewlustro/weather-proxy",
   "dependencies": {
     "request": "^2.79.0"
   }

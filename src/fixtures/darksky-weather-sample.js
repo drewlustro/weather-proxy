@@ -52,7 +52,7 @@ module.exports = {
       {
         "time": 1481572800,
         "summary": "Overcast",
-        "icon": "cloudy",
+        "icon": "rain",
         "precipIntensity": 0.0008,
         "precipProbability": 0.01,
         "precipType": "rain",
@@ -70,7 +70,7 @@ module.exports = {
       {
         "time": 1481576400,
         "summary": "Mostly Cloudy",
-        "icon": "partly-cloudy-day",
+        "icon": "snow",
         "precipIntensity": 0,
         "precipProbability": 0,
         "temperature": 43.5,
@@ -172,7 +172,7 @@ module.exports = {
       {
         "time": 1481598000,
         "summary": "Clear",
-        "icon": "clear-night",
+        "icon": "sleet",
         "precipIntensity": 0,
         "precipProbability": 0,
         "temperature": 38.1,
@@ -257,7 +257,7 @@ module.exports = {
       {
         "time": 1481616000,
         "summary": "Partly Cloudy",
-        "icon": "partly-cloudy-night",
+        "icon": "clear-night",
         "precipIntensity": 0,
         "precipProbability": 0,
         "temperature": 34.19,
@@ -274,7 +274,7 @@ module.exports = {
       {
         "time": 1481619600,
         "summary": "Partly Cloudy",
-        "icon": "partly-cloudy-night",
+        "icon": "rain",
         "precipIntensity": 0,
         "precipProbability": 0,
         "temperature": 33.49,

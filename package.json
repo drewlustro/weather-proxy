@@ -1,6 +1,6 @@
 {
   "name": "weather-proxy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pulls weather data from Dark Sky and simplifies it down to a tiny bit of JSON/CSV",
   "main": "build/index.js",
   "scripts": {

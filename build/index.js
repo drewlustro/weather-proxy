@@ -20,7 +20,7 @@ var success = chalk.green;
 var ynote = chalk.yellow;
 var black = chalk.black;
 
-var USE_LOCAL = true;
+var USE_LOCAL = false;
 
 var LOCAL_WEATHER_DATA = require('./fixtures/darksky-weather-sample');
 var WEATHER_URL = 'https://api.darksky.net/forecast/483edf4420d21e2d625cf60805566a7e/40.650002,-73.949997?exclude=minutely,daily,alerts,flags';

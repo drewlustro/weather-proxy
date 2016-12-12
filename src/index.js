@@ -18,7 +18,7 @@ const success = chalk.green
 const ynote = chalk.yellow
 const black = chalk.black
 
-const USE_LOCAL = true
+const USE_LOCAL = false
 
 const LOCAL_WEATHER_DATA = require('./fixtures/darksky-weather-sample')
 const WEATHER_URL = 'https://api.darksky.net/forecast/483edf4420d21e2d625cf60805566a7e/40.650002,-73.949997?exclude=minutely,daily,alerts,flags'

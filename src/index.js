@@ -74,7 +74,7 @@ function digestWeatherData(data) {
  */
 function normalizeWeatherConditions(samples) {
   // filter weather conditions
-  const NONE_CONDITIONS = ['clear', 'clear-day', 'clear-night', 'cloudy', 'partly-cloudy-day', 'partly-cloudy-night', 'tornado']
+  const NONE_CONDITIONS = ['clear', 'clear-day', 'clear-night', 'cloudy', 'partly-cloudy-day', 'partly-cloudy-night', 'tornado', 'fog']
   const FOG_CONDITIONS = ['fog']
   const RAIN_CONDITIONS = ['rain', 'thunderstorm']
   const SNOW_CONDITIONS = ['snow', 'sleet']
@@ -87,9 +87,9 @@ function normalizeWeatherConditions(samples) {
       s.summary = 'NONE'
     }
 
-    if (FOG_CONDITIONS.indexOf(s.summary) !== -1) {
-      s.summary = 'FOG '
-    }
+    // if (FOG_CONDITIONS.indexOf(s.summary) !== -1) {
+    //   s.summary = 'FOG '
+    // }
 
     if (RAIN_CONDITIONS.indexOf(s.summary) !== -1) {
       s.summary = 'RAIN'
@@ -116,7 +116,7 @@ function normalizeWeatherConditions(samples) {
 function roundWeatherConditions(samples) {
   // round useful conditions to nearby hour
   for (let i = 0; i < samples.length; i += HOUR_SKIP_STEP) {
-    if (samples[i].summary === 'NONE' || samples[i].summary === 'FOG ') {
+    if (samples[i].summary === 'NONE' || samples[i].summary === 'FOG') {
 
       // in order: check -1h, +1h, then -2h
       if (i - 1 >= 0 && samples[i - 1].summary !== 'NONE') {

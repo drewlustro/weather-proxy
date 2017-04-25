@@ -100,7 +100,7 @@ function normalizeWeatherConditions(samples) {
     }
 
     // fallback to 'NONE' if encounter unrecognized weather code
-    if (ACCEPTABLE_CONDITIONS.indexOf(s.summary) !== -1) {
+    if (ACCEPTABLE_CONDITIONS.indexOf(s.summary) === -1) {
       s.summary = 'NONE'
     }
 
@@ -175,7 +175,7 @@ function writeSamplesToDisk(samples) {
 let now = new Date()
 let samples;
 
-log(sysnote(`WEATHER PROXY [v1.1.0]`))
+log(sysnote(`WEATHER PROXY [v1.1.1`))
 log(note(`${now.toLocaleString()}`))
 if (USE_LOCAL) {
   log('Processing local weather data only (prevent API request)...')
